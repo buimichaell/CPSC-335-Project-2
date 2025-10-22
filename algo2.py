@@ -26,4 +26,27 @@
 """Function that return a string with the number of similar characters
    and the similar character."""
 def StrRunEncode(string):
+    curr = string[0]
+    count = 0
+    new_string = ""
+
+    if not string:
+        return ""
+    
+    if string.islower():
+        for char in string:
+            if curr == char:
+                count += 1
+            else: 
+                if count > 1:
+                    new_string += str(count)
+                new_string += curr
+                
+                count = 1 
+                curr = char
+
+        if count > 0:
+            intostr = str(count)
+            new_string += f"{intostr}{curr}"
+            count = 0      
     return new_string
