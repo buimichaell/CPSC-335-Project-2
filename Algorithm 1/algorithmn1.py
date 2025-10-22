@@ -1,3 +1,33 @@
+# Project 2
+# Algorithm 1 - Movement of Knights
+# ===================================
+# Member Names:
+# - Michael Bui
+# - Natalia Garcia
+# ===================================
+# *** Psedocode ***
+# FUNCTION knight_distance(a_row, a_col, b_row, b_col):
+#   IF (a_row, a_col) = (b_row, b_col) RETURN 0
+#   moves = [(-2,1),(-1,2),(1,2),(2,1),(2,-1),(1,-2),(-1,-2),(-2,-1)]
+#   q = [(a_row, a_col, 0)]; seen = {(a_row, a_col)}
+#   M = max(|a_row|,|a_col|,|b_row|,|b_col|) + 6; lo = -M; hi = M
+#   WHILE q not empty:
+#       (row, col, dist) = pop_front(q)
+#       FOR (dr, dc) IN moves:
+#           new_row = row + dr; new_col = col + dc
+#           IF (new_row, new_col) = (b_row, b_col) RETURN dist + 1
+#           IF lo≤new_row≤hi AND lo≤new_col≤hi AND (new_row,new_col) NOT IN seen:
+#               add (new_row,new_col) to seen; push_back(q,(new_row,new_col,dist+1))
+#   RETURN -1
+# FUNCTION min_turns(knightA, knightB):
+#   d = knight_distance(knightA[0],knightA[1],knightB[0],knightB[1])
+#   RETURN (d+1) // 2
+# A=[0,0]; B=[4,2]
+# ans = min_turns(A,B)
+# PRINT ans
+# WRITE ans+"\n" TO "output.txt"
+# ====================================== 
+
 from collections import deque
 import math
 
