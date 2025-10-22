@@ -1,4 +1,4 @@
-# CPSC-335-Project-2
+# CPSC 335 - Project 2
 
    **Overview**: Implementation of Project 2 for CPSC-335:
 
@@ -21,12 +21,12 @@
 
    1. Algorithm 1 program takes output from `output.txt` and prints the result of 1.
 
-   * **Linux**: Type `python3 algorithmn1.py` into the console from the appropriate directory(Algorithm 1).
-   * **VS Code**: Open the Algorithm 1 file, navigate to `algorithm1.py`, and run it.
+      * **Linux**: Type `python3 algorithmn1.py` into the console from the appropriate directory(Algorithm 1).
+      * **VS Code**: Open Algorithm 1 file, navigate to `algorithm1.py`, and run it.
 
    2. Algorithm 2 program takes input from `input.txt`.
 
-   * **Linux**: Type `python3 algo2.py` into the console from the appropriate directory(Algorithm2).
+      * **Linux**: Type `python3 algo2.py` into the console from the appropriate directory(Algorithm2).
 
 ## Files Included:
 
